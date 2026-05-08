@@ -1,0 +1,80 @@
+═══════════════════════════════════════════════════════
+  BLOOD DONOR MATCHING SYSTEM - SERVER START GUIDE
+═══════════════════════════════════════════════════════
+
+❌ ERROR: "Unable to connect to server"
+
+यह error तब आता है जब server running नहीं है।
+
+═══════════════════════════════════════════════════════
+  QUICK FIX (सबसे आसान तरीका)
+═══════════════════════════════════════════════════════
+
+1. इस folder में "start-server.bat" file को double-click करें
+   (या Command Prompt में "start-server.bat" type करें)
+
+2. Server start होने का wait करें
+
+3. Browser में http://localhost:3000 खोलें
+
+═══════════════════════════════════════════════════════
+  DETAILED STEPS (विस्तृत निर्देश)
+═══════════════════════════════════════════════════════
+
+STEP 1: Node.js Install करें (अगर नहीं है)
+───────────────────────────────────────────────────────
+• https://nodejs.org/ पर जाएं
+• LTS version download करें
+• Install करें (Add to PATH check करें)
+• Computer restart करें
+
+STEP 2: Dependencies Install करें
+───────────────────────────────────────────────────────
+Command Prompt में इस folder में जाकर type करें:
+  npm install
+
+STEP 3: Server Start करें
+───────────────────────────────────────────────────────
+Command Prompt में type करें:
+  npm start
+
+या
+
+  node server.js
+
+STEP 4: Browser में खोलें
+───────────────────────────────────────────────────────
+Browser में जाएं:
+  http://localhost:3000
+
+═══════════════════════════════════════════════════════
+  VERIFY SERVER IS RUNNING
+═══════════════════════════════════════════════════════
+
+Terminal में दिखना चाहिए:
+  ✅ Server is running on http://localhost:3000
+
+Browser में test करें:
+  http://localhost:3000/api/health
+
+Response: {"status":"OK","message":"Server is running"}
+
+═══════════════════════════════════════════════════════
+  COMMON PROBLEMS
+═══════════════════════════════════════════════════════
+
+Problem: "node is not recognized"
+Solution: Node.js install नहीं है - Step 1 follow करें
+
+Problem: "Port 3000 already in use"
+Solution: server.js में PORT को 3001 करें
+
+Problem: "Cannot find module"
+Solution: npm install run करें
+
+═══════════════════════════════════════════════════════
+
+Need more help? See QUICK_START.md file
+
+═══════════════════════════════════════════════════════
+

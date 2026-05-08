@@ -1,0 +1,6 @@
+node_modules/
+donors.db
+donors.db-journal
+.env
+*.log
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Blood Donor Matching System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero-background">
+        <div class="hero-pattern"></div>
+    </div>
+    <div class="container">
+        <header class="main-header">
+            <div class="logo-section">
+                <div class="logo-icon">⚙️</div>
+                <div class="logo-text">
+                    <h1>Admin Panel</h1>
+                    <p class="tagline">Manage donors and view statistics</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Login Section -->
+            <div id="loginSection" class="login-section">
+                <div class="login-intro">
+                    <h2>🔐 Admin Access</h2>
+                    <p>Enter your credentials to access the admin dashboard</p>
+                </div>
+                <form id="adminLoginForm" class="admin-form">
+                    <div class="form-group">
+                        <label for="adminUsername">
+                            <span class="label-icon">👤</span>
+                            Username <span class="required">*</span>
+                        </label>
+                        <input type="text" id="adminUsername" name="username" required placeholder="Enter admin username">
+                    </div>
+                    <div class="form-group">
+                        <label for="adminPassword">
+                            <span class="label-icon">🔒</span>
+                            Password <span class="required">*</span>
+                        </label>
+                        <input type="password" id="adminPassword" name="password" required placeholder="Enter admin password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-icon">🚀</span>
+                        <span>Login to Dashboard</span>
+                    </button>
+                    <div id="loginError" class="error-message-box" style="display: none;">
+                        <p id="loginErrorText"></p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Dashboard Section -->
+            <div id="dashboardSection" style="display: none;">
+                <!-- Statistics -->
+                <section class="statistics-section">
+                    <div class="section-header-wrapper">
+                        <h2 class="section-title-main">
+                            <span class="section-icon">📊</span>
+                            Statistics Overview
+                        </h2>
+                        <p class="section-description">Real-time donor statistics by blood group</p>
+                    </div>
+                    <div id="statisticsGrid" class="statistics-grid"></div>
+                </section>
+
+                <!-- Donors List -->
+                <section class="donors-section">
+                    <div class="section-header-wrapper">
+                        <div class="section-header">
+                            <div>
+                                <h2 class="section-title-main">
+                                    <span class="section-icon">👥</span>
+                                    All Registered Donors
+                                </h2>
+                                <p class="section-description">Manage and monitor all donor accounts</p>
+                            </div>
+                            <button id="refreshBtn" class="btn btn-secondary btn-small">
+                                <span class="btn-icon">🔄</span>
+                                Refresh
+                            </button>
+                        </div>
+                    </div>
+                    <div id="donorsTableContainer" class="table-container">
+                        <table id="donorsTable" class="donors-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Mobile</th>
+                                    <th>Blood Group</th>
+                                    <th>City</th>
+                                    <th>Available</th>
+                                    <th>Last Donation</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="donorsTableBody">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="noDonors" class="no-results" style="display: none;">
+                        <p>No donors found.</p>
+                    </div>
+                </section>
+
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <p id="successText"></p>
+                </div>
+
+                <div id="errorMessage" class="error-message-box" style="display: none;">
+                    <p id="errorText"></p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <button id="logoutBtn" class="btn-link" style="display: none;">Logout</button>
+            <a href="index.html">← Back to Home</a>
+        </footer>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
+
