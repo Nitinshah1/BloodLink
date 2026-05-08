@@ -43,7 +43,7 @@ include 'config.php';
 }
 
 .admin-link-header:hover {
-    background: #e63946; /* Hover pe background red ho jayega [cite: 2025-10-01] */
+    background: #e63946;  
     color: white !important;
 }
 
@@ -52,20 +52,20 @@ include 'config.php';
 }
 
 .admin-link-header .text {
-    display: inline-block !important; /* Forcefully text ko dikhane ke liye [cite: 2026-01-31] */
+    display: inline-block !important; 
 }
 
 
 
 
 
-/* Amazon Style Footer [cite: 2026-01-26] */
+
 .amazon-footer {
     background: var(--deep-blue);
     color: white;
     padding: 12px 0; 
     margin-top: auto; 
-    margin-bottom: 0 !important; /* Niche ka gap zero karne ke liye [cite: 2026-01-31] */
+    margin-bottom: 0 !important; 
     border-top: 3px solid #e63946;
     font-family: sans-serif;
     width: 100vw;
@@ -83,18 +83,13 @@ html, body {
 
 body {
     margin: 0;
-    padding-top: 100px; /* header height */
+    padding-top: 100px; 
     font-family: 'Inter', sans-serif;
     background-color: var(--bg-color);
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
 }
-
-
-
-
-
 
 
 .footer-container {
@@ -142,7 +137,7 @@ body {
 }
 
 
-/* Amazon Style Full Rectangle Banner [cite: 2026-01-30] – LAPTOP LAYOUT TOUCH NAHI */
+ 
 .amazon-hero {
     width: 100%;
     min-height: calc(100vh - 100px);
@@ -171,20 +166,20 @@ body {
     text-align: center;
     color: white;
 }
-        /* Modern Color Palette [cite: 2026-01-26] */
+         
 :root {
-            --bg-color: #FDE2E4;     /* Light Pinkish Background */
-            --primary-red: #FB3640;  /* Vibrant Red */
-            --deep-blue: #22577A;    /* Professional Blue */
-            --card-grey: #f0f0f0;    /* For subtle matching boards */
+            --bg-color: #FDE2E4;      
+            --primary-red: #FB3640;   
+            --deep-blue: #22577A;     
+            --card-grey: #f0f0f0;     
         }
 
-/* Balanced Professional Header (Amazon Style) [cite: 2026-01-26] */
+ 
 .main-header {
     background: var(--deep-blue);
-    padding: 10px 0; /* Padding kam ki taaki header patla aur clean dikhe */
-    position: fixed; /* Sticky ki jagah Fixed zyada stable hai professional sites mein */
-    top: 0;          /* Bilkul top par chipkane ke liye 0 zaroori hai */
+    padding: 10px 0;  
+    position: fixed;  
+    top: 0;           
     left: 0;
     width: 100%;
     z-index: 1000;
@@ -192,42 +187,42 @@ body {
     border-bottom: 3px solid var(--primary-red);
 }
 
-/* Body mein padding dena zaroori hai taaki content header ke peeche na chupe */
+ 
 body {
-    padding-top: 100px; /* Header ki height ke barabar gap */
+    padding-top: 100px;  
     background-color: var(--bg-color);
 }
         .header-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1450px; /* Badi screen ke liye width set ki [cite: 2026-01-26] */
+            max-width: 1450px;  
             width: 100%;
             margin: 0 auto;
             padding: 0 30px;
         }
 
-        /* Amazon Style: Menu left mein aur Logo uske sath [cite: 2026-01-26] */
+         
         .logo-section { 
             display: flex; 
             align-items: center; 
-            gap: 20px; /* Menu aur logo ke beech gap [cite: 2026-01-26] */
+            gap: 20px;  
         }
 
-        /* Menu Icon Styling [cite: 2026-01-27] */
+         
         .menu-icon-img {
-            width: 28px; /* Size bada kiya [cite: 2026-01-26] */
+            width: 28px;  
             height: 28px;
             cursor: pointer;
-            filter: brightness(0) invert(1); /* White color icons [cite: 2026-01-27] */
+            filter: brightness(0) invert(1);  
         }
 
-        /* Logo Drop Icon [cite: 2026-01-27] */
+         
         .blood-drop-logo {
             width: 45px;
             height: 45px;
             animation: blinker 1.5s linear infinite;
-            margin-bottom: -5px; /* Text ke thoda paas lane ke liye [cite: 2026-01-26] */
+            margin-bottom: -5px;  
         }
 
         .logo-text h1 { 
@@ -238,11 +233,11 @@ body {
             letter-spacing: 0.8px; 
         }
 
-        /* Navigation Menu [cite: 2026-01-26] */
+         
         .nav-menu {
             display: flex;
             list-style: none;
-            gap: 30px; /* Links ke beech ka gap badha diya [cite: 2026-01-26] */
+            gap: 30px;  
             margin: 0;
             padding: 0;
             align-items: center;
@@ -252,13 +247,13 @@ body {
             text-decoration: none;
             color: rgba(255,255,255,0.95);
             font-weight: 600;
-            font-size: 1rem; /* Readable font size [cite: 2026-01-26] */
+            font-size: 1rem;  
             padding: 8px 12px;
             border-radius: 6px;
             transition: 0.3s ease;
             display: flex;
             align-items: center;
-            gap: 10px; /* Icon aur text ka gap [cite: 2026-01-27] */
+            gap: 10px;  
         }
 
         .nav-menu li a:hover {
@@ -266,14 +261,14 @@ body {
             color: white;
         }
 
-        /* Icons Control [cite: 2026-01-27] */
+         
         .nav-icon-img {
-            width: 30px; /* Icons size bada diya [cite: 2026-01-26] */
+            width: 30px;  
             height: 30px;
             object-fit: contain;
         }
 
-        /* Login button ke icon ko white dikhane ke liye [cite: 2026-01-27] */
+         
         .login-user-icon {
             filter: brightness(0) invert(1); 
         }
@@ -286,25 +281,25 @@ body {
             box-shadow: 0 4px 10px rgba(251, 54, 64, 0.4);
         }
 
-        /* Hero & Sections [cite: 2026-01-26] */
-        /* 1. Hero Section ke upar ka margin kam karne ke liye */
-/* Hero section ko saaf aur bada dikhane ke liye [cite: 2026-01-26] */
+         
+         
+ 
 .hero-section {
     padding: 80px 20px;
     text-align: center;
     background: var(--card-grey);
     border-radius: 30px;
     max-width: 1100px;
-    margin: 40px auto; /* Header ke niche gap [cite: 2026-01-26] */
+    margin: 40px auto;  
     box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 
-/* Stats Section: Overlap hata kar niche set kiya [cite: 2025-10-01] */
+ 
 .stats-wrapper {
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin: 40px 0; /* Hero aur Stats ke beech barabar gap */
+    margin: 40px 0;  
 }
 
 .stat-item {
@@ -317,7 +312,7 @@ body {
 }
 
 .stat-item:hover {
-    transform: translateY(-5px); /* Hover effect professional portal ki tarah [cite: 2025-10-01] */
+    transform: translateY(-5px);  
 }
 
 .stat-item h3 {
@@ -333,9 +328,9 @@ body {
     font-size: 1.1rem;
     font-weight: 600;
 }
-/* 2. Header ke niche ka padding check karne ke liye */
+ 
 .main-header {
-    padding-bottom: 5px; /* Isse header ke niche ki extra jagah khatam hogi */
+    padding-bottom: 5px;  
 }
         .btn { padding: 16px 40px; border-radius: 12px; text-decoration: none; font-weight: 700; transition: 0.3s ease; display: inline-block; }
         .btn-primary { background: var(--primary-red); color: white; box-shadow: 0 5px 15px rgba(251, 54, 64, 0.3); }
@@ -346,9 +341,9 @@ body {
             border-top: 2px solid var(--primary-red);
             border-bottom: 2px solid var(--primary-red);
             padding: 12px 0;
-            margin: 30px 0; /* Pehle jaisa spacing */
+            margin: 30px 0;  
             width: 100%;
-            overflow: visible; /* marquee content dikhne ke liye */
+            overflow: visible;  
         }
         .ticker-section marquee {
             display: block;
@@ -356,9 +351,9 @@ body {
             white-space: nowrap;
         }
 
-        /* Ticker banner ke andar – stats (2+) pe overlap NAHI, sab theek */
+         
         .amazon-hero { position: relative; }
-        /* Hero content ke niche itna space – ticker stats ko cover na kare */
+         
         .amazon-hero .hero-content { padding-bottom: 56px; }
         .ticker-in-banner {
             position: absolute !important;
@@ -391,12 +386,12 @@ body {
 
 
 
-        /* Normal State: Jaisa abhi dikh raha hai */
+         
 .map-btn { 
     display: block; 
     width: 100%; 
     text-align: center; 
-    background: #f0fff5; /* Light Blue Background */
+    background: #f0fff5;  
     color: var(--deep-blue); 
     padding: 12px; 
     border-radius: 8px; 
@@ -404,31 +399,31 @@ body {
     font-weight: 700; 
     margin-top: 15px; 
     border: 1px solid #d0e4f5;
-    transition: 0.3s ease; /* Smooth change ke liye */
+    transition: 0.3s ease;  
 }
 
-/* Hover State: Mouse le jaane par color change */
+ 
 .map-btn:hover { 
-    background: var(--deep-blue) !important; /* Blue background ho jayega */
-    color: white !important; /* Text white ho jayega */
-    box-shadow: 0 4px 12px rgba(34, 87, 122, 0.2); /* Thoda shadow effect */
+    background: var(--deep-blue) !important;  
+    color: white !important;  
+    box-shadow: 0 4px 12px rgba(34, 87, 122, 0.2);  
 }
     
 
 
-/* Stats section ka main dabba [cite: 2025-10-01] */
+ 
 .stats-container {
     display: flex;
     justify-content: center;
     gap: 25px;
-    /* Negative (-) margin hi gap ko khatam karke cards ko image ke upar le jayega [cite: 2026-01-30] */
+     
     margin-top: -650px !important; 
     position: relative;
     z-index: 10;
     margin-bottom: 50px;
 }
 
-/* Har ek individual stats card [cite: 2025-10-01] */
+ 
 .stat-card {
     background: white;
     padding: 20px 40px;
@@ -436,7 +431,7 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
     text-align: center;
     min-width: 180px;
-    border-bottom: 4px solid var(--primary-red); /* Niche ek patli red line professional look ke liye */
+    border-bottom: 4px solid var(--primary-red);  
 }
 
 .stat-card h3 {
@@ -456,9 +451,9 @@ body {
 
 
 
-/* How It Works - Global Layout  */
+ 
 .how-section {
-    /*padding: 0px 0;*/
+     
     width: 100vw; 
     position: relative;
     left: 50%;
@@ -467,8 +462,8 @@ body {
     margin-right: -50vw;
     overflow: hidden;
 
-    min-height: auto !important; /* 100vh hata kar auto kar do */
-    padding: 100px 0 !important; /* Space margin se nahi, padding se do */
+    min-height: auto !important;  
+    padding: 100px 0 !important;  
     margin-bottom: 0 !important;
 }
 
@@ -485,11 +480,11 @@ body {
     padding: 0 0px;
 }
 
-/* Background Colors [cite: 2026-01-31] */
+ 
 .bg-white { background-color: #ffffff; }
 .bg-light { background-color: #f9f9f9; }
 
-/* Z-Pattern (Image Left/Right) [cite: 2026-01-31] */
+ 
 .reverse .how-container {
     flex-direction: row-reverse;
 }
@@ -526,10 +521,10 @@ body {
     filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1));
 }
 
-/* Mobile responsive [cite: 2026-01-31] */
-/* --- Header FIXED + COMPACT on mobile: choti height, banner neeche hi shuru --- */
+ 
+ 
 @media (max-width: 768px) {
-    /* 1. Header fixed at top, COMPACT height (choti kro) */
+     
     .main-header {
         position: fixed !important;
         top: 0 !important;
@@ -546,12 +541,12 @@ body {
         padding: 0 8px !important;
     }
 
-    /* Logo chota + ek line mein (height kam) */
+     
     .logo-section, .logo-section > div { flex-direction: row !important; align-items: center; gap: 8px !important; }
     .logo-section .blood-drop-logo { width: 28px !important; height: 28px !important; }
     .logo-section .logo-text h1, .logo-text h1 { font-size: 1.2rem !important; }
 
-    /* 2. Nav: 3 columns = 2 rows (height kam) */
+     
     .nav-menu {
         display: grid !important;
         grid-template-columns: repeat(3, 1fr) !important;
@@ -572,7 +567,7 @@ body {
 
     .nav-menu .nav-icon-img { width: 16px !important; height: 16px !important; }
 
-    /* Login button compact, full width */
+     
     .nav-login {
         grid-column: span 3 !important;
         width: 100% !important;
@@ -581,7 +576,7 @@ body {
         font-size: 0.85rem !important;
     }
 
-    /* 3. Hero/Banner: header ke neeche, ticker ke liye niche space */
+     
     .amazon-hero {
         height: auto !important;
         min-height: 360px !important;
@@ -594,7 +589,7 @@ body {
         margin-top: 0 !important;
     }
 
-    /* 4. Hero Buttons: responsive mein vertically stacked (image jaisa) */
+     
     .hero-content div[style*="display: flex"] {
         flex-direction: column !important;
         gap: 12px !important;
@@ -613,7 +608,7 @@ body {
         text-align: center;
     }
 
-    /* 5. Stats Cards (Registered Donors) Vertical stacking [cite: 2025-10-01] */
+     
     .stats-container {
         flex-direction: column !important;
         margin-top: 20px !important;
@@ -629,12 +624,12 @@ body {
 }
 
 
-/* 1. Page smooth scroll karne ke liye [cite: 2026-02-01] */
+ 
 html {
     scroll-behavior: smooth;
 }
 
-/* 2. Header link aur icon ka style [cite: 2026-01-31] */
+ 
 .nav-link-header {
     text-decoration: none;
     color: white; 
@@ -648,10 +643,10 @@ html {
 }
 
 .nav-link-header:hover {
-    color: #ffcccc; /* Hover karne par halka color change [cite: 2025-10-01] */
+    color: #ffcccc;  
 }
 
-/* 3. Full Screen Section Setup [cite: 2026-01-31] */
+ 
 .how-section {
     padding: 100px 0;
     width: 100vw;
@@ -676,39 +671,39 @@ html {
 
 
 
-/* --- MOBILE RESPONSIVE FIXES --- */
+ 
 @media (max-width: 768px) {
-    /* 1. Header aur Menu Fix */
+     
     .header-container {
-        flex-direction: column; /* Logo upar, menu niche */
+        flex-direction: column;  
         padding: 10px;
     }
     
     .nav-menu {
-        flex-wrap: wrap; /* Links screen ke andar rahein */
+        flex-wrap: wrap;  
         justify-content: center;
         gap: 15px;
         margin-top: 10px;
     }
 
     .nav-menu li a {
-        font-size: 0.8rem; /* Chota font mobile ke liye */
+        font-size: 0.8rem;  
         padding: 5px 8px;
     }
 
-    /* 2. Hero Section Fix */
+     
     .amazon-hero h2 {
-        font-size: 2.5rem !important; /* Text chota kiya */
+        font-size: 2.5rem !important;  
     }
 
-    /* 3. Amazon Hero Overlap Fix */
+     
     .how-container {
-        flex-direction: column !important; /* Step images ek ke niche ek */
+        flex-direction: column !important;  
         text-align: center;
         gap: 30px;
     }
 
-    /* 4. Ticker Section Fix – proper space (not for ticker-in-banner) */
+     
     .ticker-section:not(.ticker-in-banner) {
         font-size: 0.9rem;
         margin-top: 24px;
@@ -717,7 +712,7 @@ html {
         min-height: 48px;
     }
 
-    /* 5. Width Fix + Footer no gap (Ye zaroori hai) */
+     
     .amazon-footer, .how-section {
         width: 100%; 
         margin-left: 0;
@@ -727,7 +722,7 @@ html {
     .amazon-footer { margin-bottom: 0 !important; }
     .premium-footer { margin-bottom: 0 !important; padding-bottom: 16px; }
 }
-/* Eligibility Main Wrapper */
+ 
 .eligibility-wrapper {
     width: 100vw;
     position: relative;
@@ -744,18 +739,18 @@ html {
     margin-bottom: 0 !important;
 }
 
-/* Base Section */
+ 
 .section-full {
     display: flex;
     width: 100%;
-    height: 500px; /* Tera perfect size */
+    height: 500px;  
     align-items: stretch;
 
     
 
 }
 
-/* Photo Side: 35% Width */
+ 
 .side-img {
     flex: 0 0 35%; 
     height: 100%;
@@ -768,7 +763,7 @@ html {
     display: block;
 }
 
-/* Text Side: 65% Width */
+ 
 .side-text {
     flex: 0 0 65%;
     display: flex;
@@ -795,21 +790,21 @@ html {
     line-height: 1.6;
 }
 
-/* Manual Reverse Force */
+ 
 .reverse-row {
     flex-direction: row-reverse !important;
 }
 
-/* Alternate Background */
+ 
 .bg-light {
     background: #f9f9f9 !important;
 }
 
 
 
-/* FAQ */
-/* FAQ Section - Final Forceful Fix */
-/* FAQ SECTION - THE PRO VERSION */
+ 
+ 
+ 
 .faq-section {
     width: 100vw !important;
     min-height: 100vh !important;
@@ -827,7 +822,7 @@ html {
 }
 
 
-/* 2. Footer ko FAQ se "Join" karo */
+ 
 footer {
     margin-top: 10px !important; 
     padding-top: 60px !important; 
@@ -836,7 +831,7 @@ footer {
     background: #1a1a1a; 
 }
 
-/* 3. Global Reset (Kahin kisi hidden padding ki wajah se gap na ho) */
+ 
 * {
     box-sizing: border-box;
 }
@@ -862,7 +857,7 @@ footer {
     margin-top: 20px !important;
 }
 
-/* Accordion Side - Sirf Questions Dikhenge */
+ 
 .faq-accordion {
     flex: 1 !important;
 }
@@ -892,7 +887,7 @@ footer {
     color: #c41e3a !important;
 }
 
-/* Answer hidden by default - Magic yahan hai */
+ 
 .accordion-body {
     max-height: 0;
     overflow: hidden;
@@ -906,7 +901,7 @@ footer {
     font-size: 1.1rem !important;
 }
 
-/* Mobile Fix */
+ 
 @media (max-width: 992px) {
     .faq-container {
         flex-direction: column !important;
@@ -919,7 +914,7 @@ footer {
 
 
 .premium-footer {
-    background: #09121d !important; /* Ekdam midnight blue */
+    background: #09121d !important;  
     padding: 40px 10px;
     text-align: center;
     margin-bottom: 0 !important;
@@ -934,7 +929,7 @@ footer {
 .brand-signature {
     margin-top: 15px;
     display: flex;
-    flex-direction: column; /* Mobile pe ek ke niche ek */
+    flex-direction: column;  
     align-items: center;
     gap: 5px;
 }
@@ -955,11 +950,11 @@ footer {
 }
 
 .divider {
-    color: #FB3640; /* Red divider point */
+    color: #FB3640;  
     margin: 0 5px;
 }
 
-/* Laptop pe side-by-side */
+ 
 @media screen and (min-width: 768px) {
     .brand-signature {
         flex-direction: row;
@@ -968,7 +963,7 @@ footer {
     }
 }
 
-/* ========== INDEX PAGE ONLY: Responsive – LAPTOP (1024px+) LAYOUT BILKUL SAME ========== */
+ 
 @media (max-width: 1023px) {
     .page-index .header-container { padding: 0 20px; }
     .page-index .logo-text h1 { font-size: 1.85rem; }
@@ -992,7 +987,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-    /* Banner header ke bilkul niche natural – zyada shift nahi, headline upar hi */
+     
     body.page-index { padding-top: 200px !important; }
     .page-index .header-container { flex-direction: column; gap: 8px; padding: 0 8px; }
     .page-index .nav-menu { display: grid !important; grid-template-columns: repeat(3, 1fr) !important; gap: 6px; width: 100%; }
@@ -1001,12 +996,12 @@ footer {
     .page-index .admin-link-header,
     .page-index .nav-link-header { justify-content: center !important; font-size: 0.7rem !important; padding: 6px 4px !important; width: 100% !important; }
     .page-index .nav-login { grid-column: span 3 !important; width: 100% !important; text-align: center !important; padding: 8px 12px !important; }
-    /* Banner layout image jaisa: flex column, content upar se, ticker flow mein neeche – sab dikhe */
+     
     .page-index .amazon-hero { min-height: auto !important; padding: 24px 12px 0 !important; margin-top: 0 !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: flex-start !important; }
     .page-index .amazon-hero h2 { font-size: 2rem !important; margin-top: 0 !important; margin-bottom: 0; }
     .page-index .amazon-hero .hero-content { padding-bottom: 0 !important; padding-top: 16px; }
     .page-index .hero-content p { font-size: 1.1rem !important; margin: 12px 0 20px !important; }
-    /* Buttons vertically stacked, stats neeche – exact image layout */
+     
     .page-index .hero-content div[style*="display: flex"] { flex-direction: column !important; gap: 12px !important; width: 100% !important; max-width: 320px; margin: 0 auto !important; align-items: center !important; }
     .page-index .hero-content a,
     .page-index .hero-content button { width: 100% !important; max-width: 280px; padding: 14px 20px !important; font-size: 1rem !important; text-align: center; }
@@ -1014,7 +1009,7 @@ footer {
     .page-index .hero-content > div:last-of-type h3 { font-size: 1.75rem !important; }
     .page-index .hero-content > div:last-of-type > div:nth-child(2) { display: block !important; height: 40px; }
     .page-index .container { padding: 20px 12px; max-width: 100%; overflow-x: hidden; }
-    /* Ticker flow mein – banner ke andar neeche, hamesha show hoga */
+     
     .page-index .ticker-in-banner { position: static !important; width: 100% !important; margin: 0 !important; margin-top: 0 !important; padding: 12px 16px !important; min-height: 46px; border-top: 3px solid var(--primary-red); }
     .page-index .ticker-in-banner marquee { color: #fff !important; font-size: 0.9rem; font-weight: 800; }
     .page-index .request-section { overflow-x: hidden; max-width: 100%; padding-left: 12px; padding-right: 12px; margin-top: 28px !important; padding-top: 24px !important; }
@@ -1037,7 +1032,7 @@ footer {
     .page-index .faq-container { padding: 0 16px; gap: 28px; }
     .page-index .faq-intro h2 { font-size: 2rem !important; }
     .page-index .accordion-header { font-size: 1.1rem !important; padding: 20px 0 !important; }
-    /* Footer: no gap below, stick to bottom in responsive */
+     
     body.page-index { padding-bottom: 0 !important; margin-bottom: 0 !important; min-height: 100vh; display: flex; flex-direction: column; }
     body.page-index .container { flex: 1 1 auto; }
     .page-index .amazon-footer { padding: 24px 0 12px; margin-bottom: 0 !important; width: 100%; left: 0; right: 0; margin-left: 0; margin-right: 0; }
@@ -1105,16 +1100,16 @@ $requests_count = $requests_query ? mysqli_num_rows($requests_query) : 0;
 
 <style>
     .contact-link-header {
-        transition: all 0.3s ease; /* Smooth movement ke liye */
+        transition: all 0.3s ease;  
     }
     .contact-link-header:hover {
-        background: #c41e3a !important; /* Background red ho jayega */
-        transform: translateY(-2px); /* Halksa upar uthega */
-        box-shadow: 0 4px 12px rgba(196, 30, 58, 0.2); /* Shadow aayegi */
+        background: #c41e3a !important;  
+        transform: translateY(-2px);  
+        box-shadow: 0 4px 12px rgba(196, 30, 58, 0.2);  
     }
     .contact-link-header:hover .text, 
     .contact-link-header:hover i {
-        color: white !important; /* Text aur Icon white ho jayenge */
+        color: white !important;  
     }
 </style>
 
@@ -1463,14 +1458,14 @@ $requests_count = $requests_query ? mysqli_num_rows($requests_query) : 0;
 
 <style>
 #scrollTopBtn {
-    display: none; /* Shuru mein chhupa rahega */
+    display: none;  
     position: fixed;
     bottom: 30px;
     right: 30px;
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #FB3640; /* Tera Primary Red */
+    background-color: #FB3640;  
     color: white;
     cursor: pointer;
     padding: 15px 20px;
@@ -1482,7 +1477,7 @@ $requests_count = $requests_query ? mysqli_num_rows($requests_query) : 0;
 }
 
 #scrollTopBtn:hover {
-    background-color: #22577A; /* Hover pe Blue */
+    background-color: #22577A;  
     transform: scale(1.1);
 }
 </style>
